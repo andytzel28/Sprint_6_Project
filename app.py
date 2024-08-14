@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly_express as px
 
-vehicles_data = pd.read_csv(r"C:\Users\andyt\OneDrive\Escritorio\PROYECTOS\Sprint_6_Project\vehicles_us.csv")
+url = "https://raw.githubusercontent.com/andytzel28/Sprint_6_Project/main/vehicles_us.csv"
+
+vehicles_data = pd.read_csv(url)
 
 hist_button = st.button("Construir histograma")
 
